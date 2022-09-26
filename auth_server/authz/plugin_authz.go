@@ -43,12 +43,11 @@ func lookupAuthzSymbol(cfg *PluginAuthzConfig) (api.Authorizer, error) {
 	}
 
 	// assert that loaded symbol is of a desired type
-	var authz api.Authorizer
-	authz, ok := symAuthen.(api.Authorizer)
+	authz, ok := symAuthen.(*api.Authorizer)
 	if !ok {
 		return nil, fmt.Errorf("unexpected type from module symbol. Unable to cast Authz module")
 	}
-	return authz, nil
+	return *authz, nil
 }
 
 func (c *PluginAuthzConfig) Validate() error {

@@ -43,12 +43,11 @@ func lookupAuthnSymbol(cfg *PluginAuthnConfig) (api.Authenticator, error) {
 	}
 
 	// assert that loaded symbol is of a desired type
-	var authn api.Authenticator
-	authn, ok := symAuthen.(api.Authenticator)
+	authn, ok := symAuthen.(*api.Authenticator)
 	if !ok {
 		return nil, fmt.Errorf("unexpected type from module symbol. Unable to cast Authn module")
 	}
-	return authn, nil
+	return *authn, nil
 }
 
 func (c *PluginAuthnConfig) Validate() error {
