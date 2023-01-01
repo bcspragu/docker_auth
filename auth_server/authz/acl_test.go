@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/cesanta/docker_auth/auth_server/api"
+	"github.com/bcspragu/docker_auth/auth_server/api"
 )
 
 func sp(s string) *string {

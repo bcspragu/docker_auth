@@ -22,7 +22,7 @@ import (
 
 	"github.com/cesanta/glog"
 
-	"github.com/cesanta/docker_auth/auth_server/api"
+	"github.com/bcspragu/docker_auth/auth_server/api"
 )
 
 type PluginAuthzConfig struct {

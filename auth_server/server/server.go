@@ -31,9 +31,9 @@ import (
 	"github.com/cesanta/glog"
 	"github.com/docker/distribution/registry/auth/token"
 
-	"github.com/cesanta/docker_auth/auth_server/api"
-	"github.com/cesanta/docker_auth/auth_server/authn"
-	"github.com/cesanta/docker_auth/auth_server/authz"
+	"github.com/bcspragu/docker_auth/auth_server/api"
+	"github.com/bcspragu/docker_auth/auth_server/authn"
+	"github.com/bcspragu/docker_auth/auth_server/authz"
 )
 
 var (

@@ -33,7 +33,7 @@ import (
 	"golang.org/x/crypto/acme/autocert"
 	fsnotify "gopkg.in/fsnotify.v1"
 
-	"github.com/cesanta/docker_auth/auth_server/server"
+	"github.com/bcspragu/docker_auth/auth_server/server"
 )
 
 var (
