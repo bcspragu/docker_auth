@@ -1,4 +1,4 @@
-module github.com/cesanta/docker_auth/auth_server
+module github.com/bcspragu/docker_auth/auth_server
 
 go 1.16
 
